@@ -1,0 +1,37 @@
+ h1 {
+   font-size: 40px;
+   margin-left: 45%;
+   color: yellow;
+   padding-top: 20px;
+   padding-bottom: 15px;
+   font-family: 'Press Start 2P', cursive;
+  }
+
+h3 {
+  font-size: 20px;
+  color: yellow;
+  font-family: 'Audiowide', cursive;
+}
+
+ body {
+   background-image: url("../Media/background.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+
+ }
+
+img {
+    position: relative;
+    float: left;
+    width:  325px;
+    height: 200px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 5px 0px 5px;
+ }
+
+#General {
+  clear: left;
+  float: left;
+}
