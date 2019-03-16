@@ -1,33 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-  <title>Star Wars RPG</title>
- 
-  <link rel="stylesheet" href="Assets/CSS/reset.css">
-  <link rel="stylesheet" href="Assets/CSS/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Audiowide|Press+Start+2P" rel="stylesheet">
-</head>
+    <title>Star Wars RPG</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="Assets/CSS/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="Assets/CSS/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Audiowide|Press+Start+2P"
+      rel="stylesheet"
+    />
+  </head>
 
-<body class="background">
-  <h1>Star Wars Galaxy Battles!</h1>
+  <body class="background">
+    <h1>Star Wars Force Battles!</h1>
+    <button type="button" class="btn btn-secondary" id="new-game">
+      Start A New Game
+    </button>
 
-  <container>
-    <h3> Choose your fighter! You can join the Force or the Dark side.</h3>
-    <row>
-      <img src="Assets/Media/Kenobi.jpg" id="Kenobi"> 
-      <img src="Assets/Media/maceWindu.jpeg" id="Windu">
-      <img src="Assets/Media/ploKoon.jpg" id="Koon">      
-      <img src="Assets/Media/Grievous.jpg" id="General">
-      <img src="Assets/Media/darthMaul.jpg" id="Maul">
-      <img src="Assets/Media/darthRevan.jpg" id="Revan">
-    </row>
-  </container>
+    <h3>Choose your fighter!</h3>
 
+    <div class="container-fluid" id="fighter">
+      <div class="row">
+        <div class="col-12 col-md-3">
+          <div id="character-list">
+            <!-- <div class="character">
+                    <div class="character-stats">
 
+                    </div>  
+                  </div> -->
+          </div>
+        </div>
 
-  <script src="Assets/JavaScript/game.js"></script>
-</body>
+        <div class="col-12 col-md-9">
+          <div id="character-grid">
+            <div class="active-character" id="player">
+              <div class="active-character-stats" id="player-stats"></div>
+            </div>
+
+            <div class="active-character" id="computer">
+              <div class="active-character-stats" id="computer-stats">
+                
+              </div>
+            </div>
+    <button type="button" class="btn btn-secondary" id="attack"><i class="fab fa-rebel"></i> Attack!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </button>
+
+    <script src="Assets/JavaScript/game.js"></script>
+  </body>
+
+  <footer>
+    <div class="container">
+      Copyright ©
+    </div>
+  </footer>
 </html>
